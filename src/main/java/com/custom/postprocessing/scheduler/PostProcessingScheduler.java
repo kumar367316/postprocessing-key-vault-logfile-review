@@ -643,7 +643,7 @@ public class PostProcessingScheduler {
 	public void deletePreviousLogFile() {
 		LocalDate date = LocalDate.now();
 		LocalDate previousDate = date.minusDays(1);
-		File previousDayLogFile = new File("smartcompostprocessing_backup" + "_" + previousDate + ".0" + ".log");
+		File previousDayLogFile = new File("smartcommpostprocessing_backup" + "_" + previousDate + ".0" + ".log");
 		if (previousDayLogFile.exists()) {
 			previousDayLogFile.delete();
 		}
